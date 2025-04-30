@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/TextEnhancer/static/css/main.31d6cfe0.css",
+    "main.js": "/TextEnhancer/static/js/main.06a4069f.js",
+    "index.html": "/TextEnhancer/index.html",
+    "main.06a4069f.js.map": "/TextEnhancer/static/js/main.06a4069f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.06a4069f.js"
+  ]
+}
