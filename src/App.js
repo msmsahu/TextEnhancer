@@ -1,7 +1,7 @@
 import { useState } from 'react';
-// import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router";
 import './App.css';
-//import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
@@ -42,15 +42,15 @@ function App() {
   
   return (
     <div>
-    {/* <BrowserRouter> */}
+    <BrowserRouter>
     <Navbar title="Rich Text Editor" toggleMode={toggleMode} mode={mode}/>
       <Alert alert={alert}/>
-      {/* <Routes> */}
-      {/* <Route path="about" element={<About />} /> */}
-        {/* <Route exact path="/" element={<TextForm  mode={mode} showAlert={showAlert}/>}/> */}
-        <TextForm  mode={mode} showAlert={showAlert}/>
-      {/* </Routes> */}
-      {/* </BrowserRouter> */}
+      <Routes>
+      <Route path="about" element={<About />} />
+        <Route exact path="/" element={<TextForm  mode={mode} showAlert={showAlert}/>}/>
+          
+      </Routes>
+      </BrowserRouter>
     </div>
     
   );
