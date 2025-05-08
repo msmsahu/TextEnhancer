@@ -28,13 +28,13 @@ function App() {
       {
         setMode('dark');
         document.body.style.backgroundColor = '#042743';
-        showAlert("Dark mode enabled","Success");
+        showAlert("Dark mode enabled","success");
         
       }
       else{
         setMode('light');
         document.body.style.backgroundColor = '#ffffff';
-        showAlert("Light mode enabled","Success");
+        showAlert("Light mode enabled","success");
         
       }
 
@@ -46,7 +46,7 @@ function App() {
     <Navbar title="Rich Text Editor" toggleMode={toggleMode} mode={mode}/>
       <Alert alert={alert}/>
       <Routes>
-      <Route path="about" element={<About />} />
+      <Route path="about" element={<About mode={mode} />} />
         <Route exact path="/" element={<TextForm  mode={mode} showAlert={showAlert}/>}/>
           
       </Routes>
